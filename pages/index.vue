@@ -1,19 +1,36 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        portfolio
-      </h1>
-      <h2 class="subtitle">
-        My scrumtrulescent Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
-      </div>
+  <div class="main">
+    <div class="profile">
+      <img class="profile-img" src="~/assets/hoshi.jpg" alt="">
+      <ul class="profile-text">
+        <li>星 昂一郎 17才</li>
+        <li>N高等学校在籍3年生</li>
+        <li>e-Sportsが好き</li>
+      </ul>
     </div>
-  </section>
+    <div class="skills">
+      使える技術
+      <ul class="lang">
+        言語
+        <li class="lang-name">javascript</li>
+      </ul>
+      <ul class="lang">
+        フレームワーク、ライブラリ
+        <li class="lang-name">JQuery</li>
+      </ul>
+    </div>
+  <div class="skills">
+      勉強中
+      <ul class="lang">
+        言語
+        <li class="lang-name">Golang</li>
+      </ul>
+      <ul class="lang">
+        フレームワーク、ライブラリ
+        <li class="lang-name">Vue.js</li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -27,33 +44,49 @@ export default {
 </script>
 
 <style>
-.container
-{
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body{
+  margin: 0;
+  font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ 明朝', 'MS Mincho',sans-serif;
+  font: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ 明朝', 'MS Mincho';
+  color: #707070;
+}
+li{
+  list-style: none;
+}
+ul{
+  list-style: none;
+}
+.lang{
+  font-size:25px;
+}
+.lang-name{
+  font-size: 20px;
+  padding-left: 35px;
+}
+.skills{
+  font-size: 30px;
+  width: 600px;
+  margin: auto;
+  text-align: left;
+}
+.main{
+  max-width:1240px;
+  margin:0px auto;
   text-align: center;
 }
-.title
-{
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.profile{
+  margin: 30px;
+  display:inline-flex;
 }
-.subtitle
-{
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.profile-img{
+  border: 1px solid #707070;
+  height: 250px;
+  width: 250px;
+  border-radius: 125px;
 }
-.links
-{
-  padding-top: 15px;
+.profile-text{
+  line-height: ;
+  font-size: 35px;
 }
+
 </style>
