@@ -30,6 +30,17 @@
         <li class="lang-name">Vue.js</li>
       </ul>
     </div>
+    <div class="product">
+      作品一覧
+      <div class="product-frame">
+        <nuxt-link to="./nuxt_netlify">
+        <ul  class="product-name">
+          Nuxt.js + NetlifyでSPA
+          <li class="product-info">Nuxt.jsとNetlifyを使ってポートフォリオ用サイトのSPAを作りました</li>
+        </ul>
+        </nuxt-link>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -55,9 +66,6 @@ li{
 }
 ul{
   list-style: none;
-}
-.lang{
-  font-size:25px;
 }
 .lang-name{
   font-size: 20px;
@@ -85,8 +93,42 @@ ul{
   border-radius: 125px;
 }
 .profile-text{
-  line-height: ;
+  margin-top: 50px;
   font-size: 35px;
+}
+.product-frame{
+  transition: 0.3s ease-in-out;
+  margin: 0 auto;
+  width: 80%;
+  height: 120px;
+  border: #707070 solid 0.5px;
+}
+.product{
+  text-align: left;
+  font-size: 30px;
+  text-align: center;
+  margin: 0 auto;
+}
+.product-frame:hover{
+  background-color: #e6e6e6;
+}
+.product-name{
+  color: #707070;
+  text-decoration:none;
+  padding-left: 10px;
+  padding-top: 5px;
+  text-align: left;
+  font-size: 20px;
+}
+.product-info{
+  color:#707070;
+  padding-left: 20px;
+  padding-top: 10px;
+  text-align: left;
+  font-size: 15px;
+}
+a{
+  text-decoration: none;
 }
 
 </style>
