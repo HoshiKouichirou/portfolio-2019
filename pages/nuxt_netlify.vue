@@ -4,7 +4,7 @@
        <img class="photo" src="~/assets/portfolio_site.png" alt="">
    </div> 
    <div>
-     <div class="product-info">
+     <div class="product-info-page">
          概要
           <li class="product-info-text">nuxt自体いろいろな記事があり特に苦労することもなくデザインを含め2~3日程度で完成しました。</li>
       </div>
@@ -12,7 +12,7 @@
  </div>
 </template>
 <style>
-.product-info{
+.product-info-page{
     font-size: 30px;
     font-family: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ 明朝', 'MS Mincho',sans-serif;
     font: 'TsukuARdGothic-Regular','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','ＭＳ 明朝', 'MS Mincho';
