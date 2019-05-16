@@ -6,7 +6,7 @@
    <div>
      <div class="product-info-page">
          概要
-          <li class="product-info-text">nuxt自体いろいろな記事があり特に苦労することもなくデザインを含め2~3日程度で完成しました。</li>
+          <li class="product-info-text">nuxt自体いろいろな記事があり特に苦労することもなくデザインを含め2~3日程度で完成しました。<a href="https://github.com/poyo555/portfolio-2019">github</a></li>
       </div>
    </div>
  </div>
@@ -24,7 +24,6 @@
 .product-info-text{
     font-size: 20px;
     padding-left: 20px;
-    padding-top: 10px;
 }
 .photo{
     margin: 10 auto;
